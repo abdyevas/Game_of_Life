@@ -4,46 +4,52 @@
  *  the Game of Life by creating an initial configuration and observing how it evolves.
  */
 
-#ifndef __CONFIG_H
-#define __CONFIG_H
-
-/**
- * Set of structures and functions to parse and manage the
- * program's configuration options.
- */
+#ifndef CONFIG_HH
+#define CONFIG_HH
 
 #include <stdlib.h>
 #include <stdio.h>
+
 #define ROWS 6
 #define COLS 6
+class GameConfig{
+    /** Default constructor. Does something.
+        */
+    GameConfig();
 
-typedef int Board[ROWS][COLS];
+    /** Default destructor.
+        */
+    ~GameConfig();
 
-/**
- * displays the board
- * board - the 2D board of size [ROWS][COLS] to be displays
-*/
-void display_board(Board board);
+  public:
+    typedef int Board[ROWS][COLS];
 
-/**
- * counts neighbors of a given cell 
- * board - 2D array at a given time of size [ROWS][COLS]
- * x - position of a cell in a row
- * y - position of a cell in a column 
-*/
-int count_neighbors(Board board, int x, int y);
+    /**
+     * displays the board
+     * board - the 2D board of size [ROWS][COLS] to be displays
+    */
+    void display_board(Board board);
 
-/**
- * computes the new board at time t+1
- * board_t -  initial 2D board at time t
- * board_t_1 - new 2D board at time t+1 
-*/
-void compute_new_board(Board board_t, Board board_t_1);
+    /**
+     * counts neighbors of a given cell 
+     * board - 2D array at a given time of size [ROWS][COLS]
+     * x - position of a cell in a row
+     * y - position of a cell in a column 
+    */
+    int count_neighbors(Board board, int x, int y);
 
-/**
- * generates random board 
- * board - 2D board to be generated
-*/
-void random_board(Board board);
+    /**
+     * computes the new board at time t+1
+     * board_t -  initial 2D board at time t
+     * board_t_1 - new 2D board at time t+1 
+    */
+    void compute_new_board(Board board_t, Board board_t_1);
+
+    /**
+     * generates random board 
+     * board - 2D board to be generated
+    */
+    void random_board(Board board);
+};
 
 #endif

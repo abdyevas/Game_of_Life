@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gameconfig_4',['GameConfig',['../structGameConfig.html',1,'']]]
+  ['gameconfig_6',['GameConfig',['../classGameConfig.html',1,'']]]
 ];

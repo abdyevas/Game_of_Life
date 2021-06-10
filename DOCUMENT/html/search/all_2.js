@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['print_3',['print',['../classmyClass.html#a17b98686f3818768767055065b79380a',1,'myClass']]]
+  ['gameconfig_3',['GameConfig',['../classGameConfig.html',1,'']]],
+  ['game_5fof_5flife_4',['Game_of_Life',['../md_README.html',1,'']]]
 ];
