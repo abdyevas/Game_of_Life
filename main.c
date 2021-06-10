@@ -4,14 +4,7 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include <time.h>
-#define ROWS 6
-#define COLS 6
-
-typedef int Board[ROWS][COLS];
-
-void display_board(Board);
-int count_neighbors(Board,int,int);
-void compute_new_board(Board,Board);
+#include "game.h"
 
 int main() 
 {
