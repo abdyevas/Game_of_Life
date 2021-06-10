@@ -20,12 +20,13 @@ int main()
     Board *ptr_board_t = &board_t;
     Board *ptr_board_t_1 = &board_t_1;
 
-    while(true)
+    while (true)
     {
         // clear the console after each iteraction
-		printf("\033[H\033[J");
-        display_board(*ptr_board_t);
+		printf("\033[H\033[2J");
 
+        display_board(*ptr_board_t);
+        //printf("\033[0m");
         compute_new_board(*ptr_board_t, *ptr_board_t_1);
 
         // create temporary board to repeat iteraction with the board at time t+1
@@ -36,6 +37,6 @@ int main()
 
         // wait before each iteraction
         usleep(250000);
-    }    
+    } 
     return 0;
 }

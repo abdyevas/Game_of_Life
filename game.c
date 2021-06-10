@@ -14,10 +14,17 @@ void display_board(Board board)
         for(j = 0; j < COLS; j++)
         {
             // state 1 is for alive cell, initialized as #
-            if(board[i][j] == 1) printf("#");
+            //if(board[i][j] == 1) printf("#");
+            //if(board[i][j] == 1) printf("\033[104m");
+                
             // state 0 if for dead cell, initialized as -
-            else printf("-");
+            //else printf("-");
+            //else printf("\033[41m");
+            int c = (board[i][j] == 1) ? 104 : 0;
+			printf("\033[%dm  ",c);
+			
         }
+	    printf("\033[0m");
         printf("\n");
     }
 }
