@@ -8,20 +8,13 @@
 
 int main() 
 {    
+    srand(time(NULL));
     // create 2D board at time t
-    Board board_t = 
-    {
-        {0,0,0,0,0,0},
-        {0,0,0,1,0,0},
-        {0,1,0,1,0,0},
-        {0,0,1,1,0,0},
-        {0,0,0,0,0,0},
-    };
+    Board board_t;
+    random_board(board_t);
 
     // create 2D board at time t+1
-    int board_t_1[ROWS][COLS];
-    // copy characters of board at time t to the board at time t+1
-    memcpy(board_t_1, board_t, sizeof(board_t));
+    int board_t_1[ROWS][COLS] = {{0}};
 
     // create pointers to the boards 
     Board *ptr_board_t = &board_t;

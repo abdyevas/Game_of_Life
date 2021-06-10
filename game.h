@@ -23,3 +23,9 @@ int count_neighbors(Board board, int x, int y);
  * board_t_1 - new 2D board at time t+1 
 */
 void compute_new_board(Board board_t, Board board_t_1);
+
+/*
+ * generates random board 
+ * board - 2D board to be generated
+*/
+void random_board(Board board);

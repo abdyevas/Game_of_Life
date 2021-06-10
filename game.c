@@ -63,3 +63,16 @@ void compute_new_board(Board board_t,Board board_t_1)
         }
     }
 }
+
+void random_board(Board board)
+{
+    int i, j;
+    for(i = 0; i < ROWS; i++)
+    {
+        for(j = 0; j < COLS; j++)
+        {
+            // randomly gives each cell a state 0 or 1
+            board[i][j] = rand() % 2;
+        }
+    }
+}
