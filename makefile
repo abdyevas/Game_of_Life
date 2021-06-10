@@ -5,3 +5,6 @@ all:
 
 clean: 
 	rm -fr game
+
+doc: 
+	doxygen config.h
