@@ -7,7 +7,7 @@ typedef int Board[ROWS][COLS];
  * displays the board
  * board - the 2D board of size [ROWS][COLS] to be displays
 */
-void display_board(Board board);
+// void display_board(Board board);
 
 /*
  * counts neighbors of a given cell 
