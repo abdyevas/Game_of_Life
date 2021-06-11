@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_5ffile_3',['input_file',['../structGameConfig.html#ae05605556e2ddabeaf6fcb2666866285',1,'GameConfig']]]
+  ['display_5fboard_2',['display_board',['../classGameConfig.html#a792494b4a0c0f46940c32da06cd50139',1,'GameConfig']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_6',['print',['../classmyClass.html#a17b98686f3818768767055065b79380a',1,'myClass']]]
+  ['display_5fboard_9',['display_board',['../classGameConfig.html#a792494b4a0c0f46940c32da06cd50139',1,'GameConfig']]]
 ];
