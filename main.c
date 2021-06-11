@@ -8,6 +8,8 @@
 
 int main() 
 {    
+    // version 1 for clipped, 2 for circular boundary and neighbourhood
+    int version = 1; // 1:2
     srand(time(NULL));
     // create 2D board at time t
     Board board_t;
@@ -27,7 +29,7 @@ int main()
 
         display_board(*ptr_board_t);
         //printf("\033[0m");
-        compute_new_board(*ptr_board_t, *ptr_board_t_1);
+        compute_new_board(*ptr_board_t, *ptr_board_t_1, version);
 
         // create temporary board to repeat iteraction with the board at time t+1
         // i.e board at time t+1 becomes board at time t to continue iteractions
