@@ -11,4 +11,4 @@ doc:
 	doxygen config.h
 
 dist: 
-	tar -czf Life.tar.gz main.c game.c drawBoard.c game.h
+	tar -czf Life.tar.gz main.c libgame.a libdraw.a game.h
