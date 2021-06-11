@@ -4,7 +4,8 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include <time.h>
-#include "game.h"
+#include "./game/game.h"
+#include "./console/draw_board.h"
 
 int main() 
 {    

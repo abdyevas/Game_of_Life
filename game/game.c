@@ -1,47 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-#include <unistd.h>
-#include <time.h>
 #include "game.h"
 
-// void display_board(Board board)
-// {
-//     int i, j;
-//     for(i = 0; i < ROWS; i++)
-//     {
-//         for(j = 0; j < COLS; j++)
-//         {
-//             // state 1 is for alive cell, colored at magenta 
-//             // state 0 if for dead cell, colorless
-//             int c = (board[i][j] == 1) ? 104 : 0;
-// 			printf("\033[%dm  ",c);
-
-//         }
-// 	    printf("\033[0m");
-//         printf("\n");
-//     }
-// }
-
-int count_neighbors(Board board, int x, int y)
+int count_neighbors(Board board, int x, int y, int version)
 {
     int neighbors = 0, i, j, row, col;
-    for(i = -1; i < 2; i++)
+    // for clipped version
+    if(version == 1)
     {
-        for(j = -1; j < 2; j++)
+        for(i = -1; i < 2; i++)
         {
-            // find the positions of cell's neighbors
-            row = (x + i + ROWS) % ROWS;
-            col = (y + j + COLS) % COLS;
-            neighbors += board[row][col]; 
+            for(j = -1; j < 2; j++)
+            {
+                if(x+i < 0 || y+j < 0 || x+i == ROWS || y+j == COLS) break;
+                else neighbors += board[x+i][y+j]; 
+            }
         }
+        // subtract the position of cell 
+        neighbors -= board[x][y];
     }
-    // subtract the position of cell 
-    neighbors -= board[x][y];
+    // for circular verion
+    else if(version == 2)
+    {
+        for(i = -1; i < 2; i++)
+        {
+            for(j = -1; j < 2; j++)
+            {
+                // find the positions of cell's neighbors
+                row = (x + i + ROWS) % ROWS;
+                col = (y + j + COLS) % COLS;
+
+                neighbors += board[row][col]; 
+            }
+        }
+        // subtract the position of cell 
+        neighbors -= board[x][y];
+    }
+
     return neighbors;
 }
-void compute_new_board(Board board_t,Board board_t_1)
+
+void compute_new_board(Board board_t,Board board_t_1, int version)
 {
     int i, j, state, n_neighbors;
     for(i = 0; i < ROWS; i++)
@@ -49,8 +48,10 @@ void compute_new_board(Board board_t,Board board_t_1)
         for(j = 0; j < COLS; j++)
         {
             state = board_t[i][j];
+
             // count neighbors for each cell
-            n_neighbors = count_neighbors(board_t, i, j);
+            n_neighbors = count_neighbors(board_t, i, j, version);
+
             // cell becomes alive if it has exactly 3 neighbors
             if(state == 0 && n_neighbors == 3) board_t_1[i][j] = 1;
             // cell dies if it has less than two or more than three neighbors
@@ -60,6 +61,7 @@ void compute_new_board(Board board_t,Board board_t_1)
         }
     }
 }
+
 void random_board(Board board)
 {
     int i, j;
