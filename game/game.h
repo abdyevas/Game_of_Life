@@ -1,5 +1,5 @@
-#define ROWS 6
-#define COLS 6
+#define ROWS 10
+#define COLS 10
 
 typedef int Board[ROWS][COLS];
 

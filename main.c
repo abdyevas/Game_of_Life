@@ -10,7 +10,7 @@
 int main() 
 {    
     // version 1 for clipped, 2 for circular boundary and neighbourhood
-    int version = 1; // 1:2
+    int version = 2; // 1:2
     srand(time(NULL));
     // create 2D board at time t
     Board board_t;
@@ -39,7 +39,7 @@ int main()
         ptr_board_t_1 = tmp_board;
 
         // wait before each iteraction
-        usleep(250000);
+        usleep(100000);
     } 
     return 0;
 }
