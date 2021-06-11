@@ -8,3 +8,6 @@ clean:
 
 doc: 
 	doxygen config.h
+
+dist: 
+	tar -czf Life.tar.gz main.c game.c game.h
