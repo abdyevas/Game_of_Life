@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../game/game.h
+/home/user/L2_S2/DT/Game_of_Life/game/game.h
 
-/home/user/Downloads/DevTech/Project/Game_of_Life/main.c
+/home/user/L2_S2/DT/Game_of_Life/main.c
 stdio.h
 -
 stdlib.h
@@ -21,6 +21,6 @@ unistd.h
 -
 time.h
 -
-game.h
-/home/user/Downloads/DevTech/Project/Game_of_Life/game.h
+./game/game.h
+/home/user/L2_S2/DT/Game_of_Life/game/game.h
 

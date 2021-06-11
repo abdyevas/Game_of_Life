@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life
+CMAKE_SOURCE_DIR = /home/user/L2_S2/DT/Game_of_Life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life/build
+CMAKE_BINARY_DIR = /home/user/L2_S2/DT/Game_of_Life/build
 
 # Utility rule file for doc_doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Downloads/DevTech/Project/Game_of_Life /home/user/Downloads/DevTech/Project/Game_of_Life /home/user/Downloads/DevTech/Project/Game_of_Life/build /home/user/Downloads/DevTech/Project/Game_of_Life/build /home/user/Downloads/DevTech/Project/Game_of_Life/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/L2_S2/DT/Game_of_Life /home/user/L2_S2/DT/Game_of_Life /home/user/L2_S2/DT/Game_of_Life/build /home/user/L2_S2/DT/Game_of_Life/build /home/user/L2_S2/DT/Game_of_Life/build/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

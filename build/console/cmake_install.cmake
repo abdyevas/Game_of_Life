@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/Downloads/DevTech/Project/Game_of_Life/console
+# Install script for directory: /home/user/L2_S2/DT/Game_of_Life/console
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

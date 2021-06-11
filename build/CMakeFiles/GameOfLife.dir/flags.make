@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/user/Downloads/DevTech/Project/Game_of_Life/console -I/home/user/Downloads/DevTech/Project/Game_of_Life/game 
+C_INCLUDES = -I/home/user/L2_S2/DT/Game_of_Life/console -I/home/user/L2_S2/DT/Game_of_Life/game 
 

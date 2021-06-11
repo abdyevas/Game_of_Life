@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life
+CMAKE_SOURCE_DIR = /home/user/L2_S2/DT/Game_of_Life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life/build
+CMAKE_BINARY_DIR = /home/user/L2_S2/DT/Game_of_Life/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/Downloads/DevTech/Project/Game_of_Life/build/CMakeFiles /home/user/Downloads/DevTech/Project/Game_of_Life/build/console/CMakeFiles/progress.marks
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Downloads/DevTech/Project/Game_of_Life/build/CMakeFiles 0
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/L2_S2/DT/Game_of_Life/build/CMakeFiles /home/user/L2_S2/DT/Game_of_Life/build/console/CMakeFiles/progress.marks
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/L2_S2/DT/Game_of_Life/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/clean
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/preinstall
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/preinstall
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 console/CMakeFiles/console.dir/rule:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/CMakeFiles/console.dir/rule
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f CMakeFiles/Makefile2 console/CMakeFiles/console.dir/rule
 .PHONY : console/CMakeFiles/console.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ console: console/CMakeFiles/console.dir/rule
 
 # fast build rule for target.
 console/fast:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/build
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/build
 .PHONY : console/fast
 
 draw_board.o: draw_board.c.o
@@ -131,7 +131,7 @@ draw_board.o: draw_board.c.o
 
 # target to build an object file
 draw_board.c.o:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.o
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.o
 .PHONY : draw_board.c.o
 
 draw_board.i: draw_board.c.i
@@ -140,7 +140,7 @@ draw_board.i: draw_board.c.i
 
 # target to preprocess a source file
 draw_board.c.i:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.i
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.i
 .PHONY : draw_board.c.i
 
 draw_board.s: draw_board.c.s
@@ -149,7 +149,7 @@ draw_board.s: draw_board.c.s
 
 # target to generate assembly for a file
 draw_board.c.s:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.s
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(MAKE) -f console/CMakeFiles/console.dir/build.make console/CMakeFiles/console.dir/draw_board.c.s
 .PHONY : draw_board.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life
+CMAKE_SOURCE_DIR = /home/user/L2_S2/DT/Game_of_Life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life/build
+CMAKE_BINARY_DIR = /home/user/L2_S2/DT/Game_of_Life/build
 
 # Utility rule file for dist.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/user/Downloads/DevTech/Project/Game_of_Life/build
 include CMakeFiles/dist.dir/progress.make
 
 CMakeFiles/dist:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Downloads/DevTech/Project/Game_of_Life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Make distribution GameOfLife.tar.gz"
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life && /usr/bin/cmake -E tar zcvf /home/user/Downloads/DevTech/Project/Game_of_Life/build/GameOfLife.tar.gz --
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/L2_S2/DT/Game_of_Life/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Make distribution GameOfLife.tar.gz"
+	cd /home/user/L2_S2/DT/Game_of_Life && /usr/bin/cmake -E tar zcvf /home/user/L2_S2/DT/Game_of_Life/build/GameOfLife.tar.gz --
 
 dist: CMakeFiles/dist
 dist: CMakeFiles/dist.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/dist.dir/clean:
 .PHONY : CMakeFiles/dist.dir/clean
 
 CMakeFiles/dist.dir/depend:
-	cd /home/user/Downloads/DevTech/Project/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Downloads/DevTech/Project/Game_of_Life /home/user/Downloads/DevTech/Project/Game_of_Life /home/user/Downloads/DevTech/Project/Game_of_Life/build /home/user/Downloads/DevTech/Project/Game_of_Life/build /home/user/Downloads/DevTech/Project/Game_of_Life/build/CMakeFiles/dist.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/L2_S2/DT/Game_of_Life/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/L2_S2/DT/Game_of_Life /home/user/L2_S2/DT/Game_of_Life /home/user/L2_S2/DT/Game_of_Life/build /home/user/L2_S2/DT/Game_of_Life/build /home/user/L2_S2/DT/Game_of_Life/build/CMakeFiles/dist.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dist.dir/depend
 
