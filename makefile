@@ -1,7 +1,8 @@
 CC = gcc
-SRC = main.c game.c
+SRC = main.c 
+LIBS = libdraw.a libgame.a
 all: 
-	$(CC) $(SRC) -o game
+	$(CC) $(SRC) -o game.exe -L. $(LIBS)
 
 clean: 
 	rm -fr game
@@ -10,4 +11,4 @@ doc:
 	doxygen config.h
 
 dist: 
-	tar -czf Life.tar.gz main.c game.c game.h
+	tar -czf Life.tar.gz main.c game.c drawBoard.c game.h
