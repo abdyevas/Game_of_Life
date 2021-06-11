@@ -2,7 +2,7 @@ CC = gcc
 SRC = main.c 
 LIBS = libdraw.a libgame.a
 all: 
-	$(CC) $(SRC) -o game -L. $(LIBS)
+	$(CC) $(SRC) -o game.exe -L. $(LIBS)
 
 clean: 
 	rm -fr game
