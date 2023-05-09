@@ -5,4 +5,4 @@ The Game of Life is a single player game invented in 1970 by Cambridge mathemati
 make
 
 ## Run 
-./output (or .\output.exe)
+./exe

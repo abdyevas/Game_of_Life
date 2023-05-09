@@ -1,15 +1,13 @@
+CC	= gcc
+CFLAGS = -Wall
+LDFLAGS = -lncurses
+OBJFILES = main.o game.o draw_board.o
+TARGET = exe 
 
-output: main.o game.o draw_board.o
-	gcc main.o game.o draw_board.o -o output
+all: $(TARGET)
 
-main.o: main.c
-	gcc -c main.c
-
-game.o: game.c
-	gcc -c game.c
-
-draw_board.o: draw_board.c
-	gcc -c draw_board.c
+$(TARGET) : $(OBJFILES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
 
 clean:
-	rm *.o executable
+	rm -f $(OBJFILES) $(TARGET) *~

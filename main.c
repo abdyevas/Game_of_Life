@@ -1,12 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>
+#include <ncurses.h>
 #include <stdbool.h>
 #include <unistd.h>
 #include <time.h>
 #include "./game.h"
 #include "./draw_board.h"
+
+int kbhit(void)
+{
+    int ch = getch();
+
+    if (ch != ERR) {
+        ungetch(ch);
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
 int main() 
 {    
@@ -40,7 +52,7 @@ int main()
         ptr_board_t_1 = tmp_board;
 
         // wait before each iteraction
-        sleep(0.9);
+        sleep(0);
     } 
     return 0;
 }
