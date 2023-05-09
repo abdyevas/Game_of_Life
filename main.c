@@ -52,7 +52,7 @@ int main()
         ptr_board_t_1 = tmp_board;
 
         // wait before each iteraction
-        sleep(0);
+        sleep(0.1);
     } 
     return 0;
 }
